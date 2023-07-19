@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PMS-Register</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../css/register.css">
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+
+<body>
+
+    <div id="navbox">
+        <br>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="../index.html"><img style="margin-top: -30px;margin-left: 30px;" src="../images/hom.png" height="80px"><span style="margin-left: -2px;margin-top:30px;font-size:50px">Property Managment</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item" style="align-items: right;margin-left: 600px;">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:asvanthc@gmail.com">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                </form>
+            </div>
+        </nav>
+        <br>
+    </div>
+    <div class="container register" style="margin-top: 15px;">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="images/home.jfif" alt="" />
+                <h3>Welcome</h3>
+                <h4>to</h4>
+                <h4>Property <br>Managment</h4>
+                <a href="./login.html"><input type="submit" name="" value="Login" /></a>
+            </div>
+            <div class="col-md-9 register-right">
+                <form action="reg.php" method="post">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Registration Form</h3>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" id="f_name" name="f_name" class="form-control" placeholder="FirstName *" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" id="l_name" name="l_name" class="form-control" placeholder="Last Name *" value="" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" id="city" name="city" class="form-control" placeholder="City *" value="" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" id="phone1" name="phone1" minlength="10" maxlength="10" class="form-control" placeholder="Your Phone *" value="" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" id="street" name="street" class="form-control" placeholder="Street *" value="" />
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="form-group">
+                                        <input type="text" id="user_id" name="user_id" class="form-control" placeholder="User ID*" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="email" name="email" class="form-control" placeholder="Your Email *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" id="password" name="password" class="form-control" placeholder="Password  *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" name="type" id="type">
+                                                    <option class="hidden"  selected disabled>Select User Type</option>
+                                                    <option>Customer</option>
+                                                    <option>Owner</option>
+                                                    <option>Broker</option>
+                                                </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" id="phone2" name="phone2" minlength="10" maxlength="10" class="form-control" placeholder="Alternative Phone *" value="" />
+                                    </div>
+                                    <input type="submit" class="btnRegister" value="Register" />
+                                </div>
+                            </div>
+
+                </form>
+                </div>
+                </div>
+            </div>
+</body>
+
+</html>
